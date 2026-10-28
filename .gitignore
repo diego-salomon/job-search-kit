@@ -1,0 +1,15 @@
+# Everything personal stays on your computer.
+me/*
+!me/README.md
+applications/*
+!applications/README.md
+scans/*
+!scans/README.md
+search/portals.yml
+search/playbook.md
+
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+node_modules/

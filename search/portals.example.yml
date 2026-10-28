@@ -1,0 +1,45 @@
+# Company-portal scanner config. Copy to search/portals.yml (search-setup does it for you).
+# The scanner reads the public job APIs of Greenhouse, Ashby, Lever, Workable, Recruitee
+# and SmartRecruiters. No keys, no scraping.
+
+location_filter:
+  # A job is kept when its location mentions any of these.
+  allow:
+    - "Remote"
+    - "Worldwide"
+    - "Anywhere"
+    - "Europe"
+    - "EMEA"
+    # add your country and cities, in every language postings use
+  block: []
+
+title_filter:
+  # Kept when the title contains any positive word and no negative word.
+  # Keep positives broad: the scan reads every posting before deciding.
+  positive:
+    - "Operations"
+    - "Coordinator"
+    - "Specialist"
+    - "Analyst"
+  negative:
+    - "Intern"
+    - "Internship"
+    - "Director"
+    - "VP"
+
+tracked_companies:
+  # Find a company's provider and slug with:  python3 tools/scan_portals.py --probe companyname
+  - name: GitLab
+    provider: greenhouse
+    slug: gitlab
+    enabled: true
+
+  - name: Zapier
+    provider: ashby
+    slug: zapier
+    enabled: true
+
+  - name: Example on Lever
+    provider: lever
+    slug: example
+    enabled: false
