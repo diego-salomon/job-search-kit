@@ -1,16 +1,23 @@
-# Job search kit
+<div align="center">
 
-A tool that automates as much of a job search as possible and keeps you on top of every posting that shows up. It gives anyone looking for work a full structure, from onboarding to follow-ups, run with [Claude Code](https://claude.com/claude-code) or Codex.
+# 🧭 Job search kit
 
-1. **Onboarding.** An interview, one question at a time, that reads your LinkedIn PDF and CV and writes your profile, your search strategy and your writing voice.
-2. **Base CV**, built from the profile, as a plain PDF that applicant tracking systems can read.
-3. **LinkedIn**, rewritten to match the CV, plus the settings that help recruiters find you.
-4. **Searches**: a company-portal scanner, a remote-job harvester and a playbook of job board links for each kind of role.
-5. **Scan rounds** that read every new posting and judge it by level, pay, hard requirements and location.
-6. **One folder per job**: tailored CV, cover letter, form answers and the saved posting.
-7. **Tracker and follow-ups**: every job in one CSV, chasers when they're due, interview prep and a weekly review.
+### A job search run with Claude Code or Codex: an intake interview, tailored CVs, scan rounds, a folder per application and a tracker. Your data never leaves your machine.
 
-It prepares everything and waits. Submitting, accounts and passwords stay with you.
+[![Python 3.9+](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white&style=flat-square)](#getting-started)
+[![Node 18+](https://img.shields.io/badge/Node-18+-339933?logo=nodedotjs&logoColor=white&style=flat-square)](#getting-started)
+[![Claude Code / Codex](https://img.shields.io/badge/runs_with-Claude_Code_or_Codex-D97757?style=flat-square)](https://claude.com/claude-code)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
+
+<br>
+
+<img src="docs/assets/flow.png" width="860" alt="The seven steps: onboarding interview, base CV, LinkedIn rewrite, searches, scan rounds, a folder per job, and a tracker with follow-ups. Submitting stays with you." />
+
+</div>
+
+---
+
+It gives anyone looking for work a full structure, from onboarding to follow-ups. It prepares everything and waits; submitting, accounts and passwords stay with you.
 
 ## Getting started
 
@@ -58,8 +65,8 @@ python3 tools/tracker.py due
 - Apply within days. Postings fill fast.
 - Companies on Workday or SuccessFactors can't be scanned through a public API; keep them as links in the playbook.
 
-## Privacy
+---
 
-Your data lives in `me/`, `applications/` and `scans/`, which git ignores. Check `git status` before pushing a fork.
-
-MIT license.
+<div align="center">
+<sub>Built by <a href="https://github.com/diego-salomon">Diego Salomón</a>. · <a href="https://www.linkedin.com/in/diegosalomon">LinkedIn</a></sub>
+</div>
